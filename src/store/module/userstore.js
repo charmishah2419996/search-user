@@ -1,6 +1,4 @@
 import { SET_USERS_LIST } from "@/store/mutation-types";
-import axios from 'axios';
-
 const state = {
   usersList:[],
   resetClear:false
@@ -17,17 +15,9 @@ const mutations = {
   },
 };
 
-const actions = {
-    async FETCH_USERS_LIST({ commit}) {
-        const response = await axios.get(`https://jsonplaceholder.typicode.com/users`);
-        commit('SET_USERS_LIST', response.data);
-     },
-};
-
 export default {
   namespaced: true,
   state,
   getters,
   mutations,
-  actions,
 };

@@ -95,7 +95,7 @@ export default {
       currentPage1: 5,
       isReset:false,
       searchInput:"",
-      searchOptionsList:['name','username','email','phone','website','company','address'],
+      searchOptionsList:['name','username','address','email','phone','website','company',],
       isCompanySelected:false,
       isAdressSelected:false,
       companyList:['name','catchPhrase','bs'],
